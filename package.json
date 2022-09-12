@@ -1,0 +1,30 @@
+{
+  "name": "pornox",
+  "version": "1.0.0",
+  "description": "An Nsfw and Sfw package for dscord bots",
+  "main": "./src/index.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DREXYOP/pornox.git"
+  },
+  "keywords": [
+    "Nsfw",
+    "Sfw",
+    "Discord",
+    "package"
+  ],
+  "author": "Drexy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DREXYOP/pornox/issues"
+  },
+  "homepage": "https://github.com/DREXYOP/pornox#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "superagent": "^8.0.0"
+  }
+}
