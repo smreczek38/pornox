@@ -1,112 +1,105 @@
 
-const superagent = require('superagent');
+const superagent = require('axios');
 
 
 class Nsfw {
-  constructor() {
-    this.methods = [
-        "anal",
-        "fourk",
-        "ass",
-        "gonewild",
-        "pgif",
-        "pussy",
-        "thigh",
-        "boobs",
-        "hentaiass",
-        "hentai",
-        "hmidriff",
-        "hentaithigh"
-        
-        
-      ];
-
-  }
+  constructor() {}
 
   async anal() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=anal"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async fourk() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=4k"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async ass() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=ass"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async gonewild() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=gonewild"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async pgif() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=pgif"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async pussy() {
-    const { body }  = await superagent.get(
+    const { data }  = await superagent.get(
       "https://nekobot.xyz/api/image?type=pussy"
     );
-    
-     return body.message;
+    const message = await data.message;
+     return message;
 
   }
 
   async thigh() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=thigh"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async boobs() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
         "https://nekobot.xyz/api/image?type=boobs"
       );
-      return body.message;
+      const message = await data.message;
+      return message;
   }
 
   async hentaiass() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=hass"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async hentai() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=hentai"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async hmidriff() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=hmidriff"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   async hentaithigh() {
-    const { body } = await superagent.get(
+    const { data } = await superagent.get(
       "https://nekobot.xyz/api/image?type=hthigh"
     );
-    return body.message;
+    const message = await data.message;
+    return message;
   }
 
   
