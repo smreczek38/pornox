@@ -4,7 +4,7 @@ const sfw = new pornox.Sfw()
 
 
 async function test() {
-  console.log(await sfw.blush())
+  console.log(await sfw.hug())
     
 }
 
